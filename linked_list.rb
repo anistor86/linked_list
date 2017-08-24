@@ -139,8 +139,32 @@ end
 class Node
   attr_accessor :value, :next_node
 
-  def initialize(value, next_node = nil)
+  def initialize(data, next_node = nil)
     @value = data
     @next_node = next_node
   end
 end
+
+
+test = LinkedList.new
+test.append("A")
+test.prepend("B")
+test.append("C")
+test.prepend("D")
+test.prepend("J")
+puts test.tail
+test.pop
+test.pop
+puts test.size
+puts test.head
+puts test.tail
+test.to_s
+puts test.at(2).value
+puts test.contains?("B")
+puts test.contains?("C")
+puts test.find("C")
+puts test.find("B")
+test.remove_at(2)
+test.to_s
+test.insert_at("F", 1)
+test.to_s
