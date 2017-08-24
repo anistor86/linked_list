@@ -145,6 +145,7 @@ class Node
   end
 end
 
+=begin
 
 test = LinkedList.new
 test.append("A")
@@ -168,3 +169,5 @@ test.remove_at(2)
 test.to_s
 test.insert_at("F", 1)
 test.to_s
+
+=end
